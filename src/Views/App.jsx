@@ -1,6 +1,7 @@
 import { useState } from 'react'
 // import './App.css'
 import FriendsList from '../Components/FriendsList'
+import FormAddFriend from '../Components/FormAddFriend'
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className='app'>
         <div className='sidebar'>
           <FriendsList />
+          <FormAddFriend />
         </div>
       </div>
     </>
