@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-
+import FriendsList from '../Components/FriendsList'
 function App() {
   
   return (
     <>
-      <h1>App</h1>
+      <div className='app'>
+        <div className='sidebar'>
+           <FriendsList/>
+        </div>
+      </div>
     </>
   )
 }
