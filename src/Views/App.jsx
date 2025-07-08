@@ -8,7 +8,8 @@ function App() {
   const [isOpenFormAddFriend , setIsOpenFormAddFriend] = useState(false)
 
   const handleFormOpen = () => {
-    setIsOpenFormAddFriend((isOpenFormAddFriend) =>!isOpenFormAddFriend )
+    setIsOpenFormAddFriend((isOpenFormAddFriend) =>!isOpenFormAddFriend 
+  )
     
   }
 
