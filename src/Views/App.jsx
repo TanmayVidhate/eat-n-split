@@ -22,7 +22,7 @@ function App() {
             isOpenFormAddFriend ? <FormAddFriend /> : <p>{""}</p>
           }
           
-          <Button onClick = {() => handleFormOpen()} >Add friend</Button>
+          <Button onClick = {() => handleFormOpen()} >{isOpenFormAddFriend ? "close" : "Add friend"}</Button>
         </div>
       <FormBillSplit/>
       </div>
