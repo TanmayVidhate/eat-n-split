@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from './Button';
 function Friend({ friend: { id, name, image, balance } }) {
     return (
         <>
@@ -9,7 +9,7 @@ function Friend({ friend: { id, name, image, balance } }) {
                 {
                     balance < 0 ? <p className='red' >You own {name} {Math.abs(balance)}</p> : balance > 0 ? <p className='green'>{name} own {balance}</p> : balance === 0 ? <p>You and {name} are even</p> : null
                 }
-                <button className='button'>Select</button>
+                <Button>Select</Button>
             </li>
         </>
     )
