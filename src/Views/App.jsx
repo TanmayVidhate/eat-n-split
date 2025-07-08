@@ -3,6 +3,7 @@ import { useState } from 'react'
 import FriendsList from '../Components/FriendsList'
 import FormAddFriend from '../Components/FormAddFriend'
 import Button from '../Components/Button'
+import FormBillSplit from "../Components/FormBillSplit"
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
           <FormAddFriend />
           <Button>Add friend</Button>
         </div>
+      <FormBillSplit/>
       </div>
     </>
   )
