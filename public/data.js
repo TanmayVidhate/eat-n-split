@@ -19,6 +19,4 @@ const initialFriends = [
   },
 ];
 
-export {
-    initialFriends
-}
+export default initialFriends;
