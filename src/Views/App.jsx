@@ -8,7 +8,7 @@ import FormBillSplit from "../Components/FormBillSplit"
 import initialFriends from "../../public/data"
 
 function App() {
-  const [friends,setFriends] = useState(initialFriends)
+  const [friends,setFriends] = useState(initialFriends) //lifting up state 
   const [isOpenFormAddFriend , setIsOpenFormAddFriend] = useState(false)
   
 
