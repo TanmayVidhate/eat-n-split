@@ -1,15 +1,18 @@
 import React from 'react'
 import Button from './Button';
-function Friend({ friend: { id, name, image, balance } }) {
+function Friend({ friend,onSelectedFriend, d }) {
+
+    const isSelected = d == friend.id
+
     return (
         <>
-            <li>
-                <img src={image} alt={name} />
-                <h3>{name}</h3>
+            <li className={isSelected ? 'selected' : ''}>
+                <img src={friend.image} alt={friend.name} />
+                <h3>{friend.name}</h3>
                 {
-                    balance < 0 ? <p className='red' >You own {name} {Math.abs(balance)}</p> : balance > 0 ? <p className='green'>{name} own {balance}</p> : balance === 0 ? <p>You and {name} are even</p> : null
+                    friend.balance < 0 ? <p className='red' >You own {friend.name} {Math.abs(friend.balance)}</p> : friend.balance > 0 ? <p className='green'>{friend.name} own {friend.balance}</p> : friend.balance === 0 ? <p>You and {friend.name} are even</p> : null
                 }
-                <Button>Select</Button>
+                <Button onClick={() =>onSelectedFriend(friend)}>{!isSelected ? "Select" : "Close"}</Button>
             </li>
         </>
     )
