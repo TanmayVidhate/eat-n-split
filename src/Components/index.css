@@ -49,6 +49,8 @@ body {
 }
 
 .sidebar ul {
+  height: 250px;  
+  overflow-y: auto;  
   list-style: none;
   display: flex;
   flex-direction: column;
