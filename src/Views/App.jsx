@@ -22,7 +22,8 @@ function App() {
   }
 
   const handleSelectFriend = (friend) =>{
-    setShowFrinds((curr) => curr?.id === friend?.id ? null : friend);
+    setShowFrinds((curr) => curr?.id === friend?.id ? null : friend)
+    setIsOpenFormAddFriend(false)
   }
 
 
