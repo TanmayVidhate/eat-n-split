@@ -22,7 +22,7 @@ function App() {
   }
 
   const handleSelectFriend = (friend) =>{
-    setShowFrinds(friend)
+    setShowFrinds((curr) => curr?.id === friend?.id ? null : friend);
   }
 
 
