@@ -18,6 +18,7 @@ function App() {
 
   const handleAddNewFriend = (newFriend) =>{
     setFriends((friends) => [...friends, newFriend])
+    setIsOpenFormAddFriend(false) // after data add in list then from hide
   }
 
   return (
